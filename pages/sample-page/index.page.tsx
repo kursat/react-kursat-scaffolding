@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React, { useCallback } from 'react'
 import Button from '../../components/core/Button/Button'
 import useAppDispatch from '../../hooks/useAppDispatch'
@@ -25,7 +26,10 @@ const SamplePage = () => {
   }, [dispatch])
 
   return (
-    <div>
+    <>
+      <Head>
+        <title>Create Next App</title>
+      </Head>
       <Button onClick={onClickDecrementFive} color={'secondary'}>
         -5
       </Button>
@@ -37,7 +41,7 @@ const SamplePage = () => {
       </Button>
 
       <pre>{JSON.stringify(movies, null, 2)}</pre>
-    </div>
+    </>
   )
 }
 

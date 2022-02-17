@@ -7,6 +7,7 @@ import { Button as MaterialButton } from '@mui/material'
 type PropTypes = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>
   color?: 'primary' | 'secondary' | 'success' | 'error' | 'info' | 'warning'
+  type?: 'button' | 'submit' | 'reset' | undefined
 }
 
 const Button: React.FC<PropTypes> = ({ children, color, ...otherProps }) => {
