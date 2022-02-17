@@ -39,3 +39,6 @@ yarn-error.log*
 
 # Project Files
 .idea
+
+# Environment Files
+.env
