@@ -1,9 +1,10 @@
 import React, { useCallback } from 'react'
+import Button from '../../components/core/Button/Button'
 import useAppDispatch from '../../hooks/useAppDispatch'
 import useAppSelector from '../../hooks/useAppSelector'
 import { decrement, increment, incrementByAmount } from '../../store/counter'
 
-const Index = () => {
+const SamplePage = () => {
   const dispatch = useAppDispatch()
 
   const count = useAppSelector((state) => state.counter.value)
@@ -23,7 +24,7 @@ const Index = () => {
 
   return (
     <div>
-      <button onClick={onClickDecrementFive}>-5</button>
+      <Button onClick={onClickDecrementFive}>-5</Button>
       <button onClick={onClickDecrement}>-</button>
       {count}
       <button onClick={onClickIncrement}>+</button>
@@ -32,4 +33,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default SamplePage
