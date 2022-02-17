@@ -26,11 +26,15 @@ const SamplePage = () => {
 
   return (
     <div>
-      <Button onClick={onClickDecrementFive}>-5</Button>
-      <button onClick={onClickDecrement}>-</button>
+      <Button onClick={onClickDecrementFive} color={'secondary'}>
+        -5
+      </Button>
+      <Button onClick={onClickDecrement}>-</Button>
       {count}
-      <button onClick={onClickIncrement}>+</button>
-      <button onClick={onClickIncrementFive}>+5</button>
+      <Button onClick={onClickIncrement}>+</Button>
+      <Button onClick={onClickIncrementFive} color={'secondary'}>
+        +5
+      </Button>
 
       <pre>{JSON.stringify(movies, null, 2)}</pre>
     </div>
